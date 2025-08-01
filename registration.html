@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | RF Spectrum Sandbox</title>
+    <meta name="description" content="Register for the RF Spectrum Sandbox program and start your innovation journey today.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-dark fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html" aria-label="RF Spectrum Sandbox Home">
+                <div class="logo-icon me-3">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="brand-name">RF Spectrum Sandbox</div>
+                    <div class="brand-subtitle">Federal Government of Nigeria</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-accent text-dark ms-2 px-3 active" href="registration.html" aria-current="page">Register Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-gradient-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold mb-4">Join the Innovation</h1>
+                    <p class="lead">
+                        Register for the RF Spectrum Sandbox and start your journey towards 
+                        revolutionary radio frequency innovations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Progress Indicator -->
+                    <div class="progress-container mb-5">
+                        <div class="progress-steps">
+                            <div class="progress-step active" data-step="1">
+                                <div class="step-circle">
+                                    <span class="step-number">1</span>
+                                    <svg class="step-check d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">User Type</div>
+                            </div>
+                            
+                            <div class="progress-line"></div>
+                            
+                            <div class="progress-step" data-step="2">
+                                <div class="step-circle">
+                                    <span class="step-number">2</span>
+                                    <svg class="step-check d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">Personal Info</div>
+                            </div>
+                            
+                            <div class="progress-line"></div>
+                            
+                            <div class="progress-step" data-step="3">
+                                <div class="step-circle">
+                                    <span class="step-number">3</span>
+                                    <svg class="step-check d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">Project Details</div>
+                            </div>
+                            
+                            <div class="progress-line"></div>
+                            
+                            <div class="progress-step" data-step="4">
+                                <div class="step-circle">
+                                    <span class="step-number">4</span>
+                                    <svg class="step-check d-none" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div class="step-label">Review & Submit</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Registration Form -->
+                    <form id="registrationForm" class="multi-step-form needs-validation" novalidate>
+                        
+                        <!-- Step 1: User Type Selection -->
+                        <div class="form-step active" data-step="1">
+                            <div class="form-step-content">
+                                <h2 class="h3 fw-bold mb-4">Select Your Registration Type</h2>
+                                <p class="text-muted mb-4">
+                                    Choose the category that best describes your participation in the RF Spectrum Sandbox.
+                                </p>
+                                
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="user-type-card" data-type="individual">
+                                            <div class="card h-100 border-2 user-type-option">
+                                                <div class="card-body p-4 text-center">
+                                                    <div class="mb-4">
+                                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary">
+                                                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                                            <circle cx="12" cy="7" r="4"/>
+                                                        </svg>
+                                                    </div>
+                                                    <h4 class="fw-bold mb-3">Individual</h4>
+                                                    <p class="text-muted mb-4">
+                                                        Researchers, entrepreneurs, academics, and independent innovators 
+                                                        working on RF spectrum projects.
+                                                    </p>
+                                                    <ul class="list-unstyled text-start">
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Personal project applications
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Individual mentorship
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Flexible testing schedules
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="user-type-card" data-type="organization">
+                                            <div class="card h-100 border-2 user-type-option">
+                                                <div class="card-body p-4 text-center">
+                                                    <div class="mb-4">
+                                                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary">
+                                                            <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                                                            <path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/>
+                                                        </svg>
+                                                    </div>
+                                                    <h4 class="fw-bold mb-3">Organization</h4>
+                                                    <p class="text-muted mb-4">
+                                                        Companies, institutions, research centers, and other organizations 
+                                                        developing RF technologies.
+                                                    </p>
+                                                    <ul class="list-unstyled text-start">
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Team collaboration tools
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Priority support access
+                                                        </li>
+                                                        <li class="mb-2">
+                                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success me-2">
+                                                                <polyline points="20,6 9,17 4,12"/>
+                                                            </svg>
+                                                            Extended testing periods
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <input type="hidden" id="userType" name="userType" required>
+                                <div class="invalid-feedback d-block text-center mt-3" id="userTypeError" style="display: none !important;">
+                                    Please select a registration type.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Personal/Organization Information -->
+                        <div class="form-step" data-step="2">
+                            <div class="form-step-content">
+                                <h2 class="h3 fw-bold mb-4" id="step2Title">Personal Information</h2>
+                                
+                                <!-- Individual Fields -->
+                                <div id="individualFields" class="user-type-fields">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                            <div class="invalid-feedback">Please provide your first name.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                            <div class="invalid-feedback">Please provide your last name.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                                            <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="profession" class="form-label">Profession/Field <span class="text-danger">*</span></label>
+                                            <select class="form-select" id="profession" name="profession" required>
+                                                <option value="">Select your profession...</option>
+                                                <option value="researcher">Researcher</option>
+                                                <option value="engineer">Engineer</option>
+                                                <option value="entrepreneur">Entrepreneur</option>
+                                                <option value="academic">Academic/Professor</option>
+                                                <option value="student">Student</option>
+                                                <option value="consultant">Consultant</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select your profession.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="experience" class="form-label">Years of RF Experience <span class="text-danger">*</span></label>
+                                            <select class="form-select" id="experience" name="experience" required>
+                                                <option value="">Select experience level...</option>
+                                                <option value="0-2">0-2 years</option>
+                                                <option value="3-5">3-5 years</option>
+                                                <option value="6-10">6-10 years</option>
+                                                <option value="11-15">11-15 years</option>
+                                                <option value="15+">15+ years</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select your experience level.</div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <label for="individualAffiliation" class="form-label">Current Affiliation <span class="text-muted">(Optional)</span></label>
+                                            <input type="text" class="form-control" id="individualAffiliation" name="individualAffiliation" 
+                                                   placeholder="University, Company, or Institution">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Organization Fields -->
+                                <div id="organizationFields" class="user-type-fields" style="display: none;">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <label for="organizationName" class="form-label">Organization Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="organizationName" name="organizationName">
+                                            <div class="invalid-feedback">Please provide your organization name.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="organizationType" class="form-label">Organization Type <span class="text-danger">*</span></label>
+                                            <select class="form-select" id="organizationType" name="organizationType">
+                                                <option value="">Select organization type...</option>
+                                                <option value="company">Private Company</option>
+                                                <option value="university">University/Academic Institution</option>
+                                                <option value="research">Research Center</option>
+                                                <option value="government">Government Agency</option>
+                                                <option value="ngo">NGO/Non-Profit</option>
+                                                <option value="startup">Startup</option>
+                                                <option value="other">Other</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select organization type.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="organizationSize" class="form-label">Organization Size <span class="text-danger">*</span></label>
+                                            <select class="form-select" id="organizationSize" name="organizationSize">
+                                                <option value="">Select size...</option>
+                                                <option value="1-10">1-10 employees</option>
+                                                <option value="11-50">11-50 employees</option>
+                                                <option value="51-200">51-200 employees</option>
+                                                <option value="201-1000">201-1000 employees</option>
+                                                <option value="1000+">1000+ employees</option>
+                                            </select>
+                                            <div class="invalid-feedback">Please select organization size.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="contactPersonName" class="form-label">Primary Contact Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="contactPersonName" name="contactPersonName">
+                                            <div class="invalid-feedback">Please provide contact person name.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="contactPosition" class="form-label">Contact Position <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="contactPosition" name="contactPosition">
+                                            <div class="invalid-feedback">Please provide contact position.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="organizationEmail" class="form-label">Organization Email <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" id="organizationEmail" name="organizationEmail">
+                                            <div class="invalid-feedback">Please provide a valid email address.</div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <label for="organizationPhone" class="form-label">Organization Phone <span class="text-danger">*</span></label>
+                                            <input type="tel" class="form-control" id="organizationPhone" name="organizationPhone">
+                                            <div class="invalid-feedback">Please provide a valid phone number.</div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <label for="organizationAddress" class="form-label">Organization Address <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="organizationAddress" name="organizationAddress" rows="3"></textarea>
+                                            <div class="invalid-feedback">Please provide organization address.</div>
+                                        </div>
+                                        
+                                        <div class="col-12">
+                                            <label for="organizationWebsite" class="form-label">Website <span class="text-muted">(Optional)</span></label>
+                                            <input type="url" class="form-control" id="organizationWebsite" name="organizationWebsite" 
+                                                   placeholder="https://www.example.com">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Project Details -->
+                        <div class="form-step" data-step="3">
+                            <div class="form-step-content">
+                                <h2 class="h3 fw-bold mb-4">Project Information</h2>
+                                
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <label for="projectTitle" class="form-label">Project Title <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="projectTitle" name="projectTitle" required>
+                                        <div class="invalid-feedback">Please provide a project title.</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="projectCategory" class="form-label">Project Category <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="projectCategory" name="projectCategory" required>
+                                            <option value="">Select category...</option>
+                                            <option value="5g">5G/Advanced Mobile</option>
+                                            <option value="iot">IoT/M2M Communications</option>
+                                            <option value="satellite">Satellite Communications</option>
+                                            <option value="radar">Radar Systems</option>
+                                            <option value="broadcast">Broadcasting Technology</option>
+                                            <option value="emergency">Emergency Communications</option>
+                                            <option value="research">Research & Development</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select a project category.</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="frequencyBands" class="form-label">Frequency Bands of Interest <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="frequencyBands" name="frequencyBands" required>
+                                            <option value="">Select frequency band...</option>
+                                            <option value="hf">HF (3-30 MHz)</option>
+                                            <option value="vhf">VHF (30-300 MHz)</option>
+                                            <option value="uhf">UHF (300 MHz - 3 GHz)</option>
+                                            <option value="shf">SHF (3-30 GHz)</option>
+                                            <option value="ehf">EHF (30-300 GHz)</option>
+                                            <option value="multiple">Multiple Bands</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select frequency bands.</div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label for="projectDescription" class="form-label">Project Description <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="projectDescription" name="projectDescription" rows="4" 
+                                                 placeholder="Describe your project objectives, methodology, and expected outcomes..." required></textarea>
+                                        <div class="invalid-feedback">Please provide a project description.</div>
+                                        <div class="form-text">Minimum 100 characters required.</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="projectDuration" class="form-label">Expected Duration <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="projectDuration" name="projectDuration" required>
+                                            <option value="">Select duration...</option>
+                                            <option value="3-6">3-6 months</option>
+                                            <option value="6-12">6-12 months</option>
+                                            <option value="12-18">12-18 months</option>
+                                            <option value="18-24">18-24 months</option>
+                                            <option value="24+">24+ months</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select project duration.</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="teamSize" class="form-label">Team Size <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="teamSize" name="teamSize" required>
+                                            <option value="">Select team size...</option>
+                                            <option value="individual">Individual (1 person)</option>
+                                            <option value="small">Small team (2-5 people)</option>
+                                            <option value="medium">Medium team (6-15 people)</option>
+                                            <option value="large">Large team (16+ people)</option>
+                                        </select>
+                                        <div class="invalid-feedback">Please select team size.</div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label for="technicalRequirements" class="form-label">Technical Requirements <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="technicalRequirements" name="technicalRequirements" rows="3" 
+                                                 placeholder="Describe your technical requirements, equipment needs, testing environment, etc..." required></textarea>
+                                        <div class="invalid-feedback">Please provide technical requirements.</div>
+                                    </div>
+                                    
+                                    <div class="col-12">
+                                        <label for="expectedOutcomes" class="form-label">Expected Outcomes <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="expectedOutcomes" name="expectedOutcomes" rows="3" 
+                                                 placeholder="What do you expect to achieve? What impact will your project have?" required></textarea>
+                                        <div class="invalid-feedback">Please provide expected outcomes.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Review and Submit -->
+                        <div class="form-step" data-step="4">
+                            <div class="form-step-content">
+                                <h2 class="h3 fw-bold mb-4">Review Your Application</h2>
+                                <p class="text-muted mb-4">
+                                    Please review your information carefully before submitting. You can go back to make changes if needed.
+                                </p>
+                                
+                                <div id="reviewContent" class="review-section">
+                                    <!-- Dynamic content will be populated here -->
+                                </div>
+                                
+                                <div class="compliance-section mt-5">
+                                    <h4 class="fw-bold mb-4">Compliance & Agreements</h4>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="dataAccuracy" name="dataAccuracy" required>
+                                        <label class="form-check-label" for="dataAccuracy">
+                                            I certify that all information provided is accurate and complete. <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">You must certify the accuracy of your information.</div>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="termsAcceptance" name="termsAcceptance" required>
+                                        <label class="form-check-label" for="termsAcceptance">
+                                            I agree to the <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">Terms and Conditions</a> 
+                                            of the RF Spectrum Sandbox program. <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">You must accept the terms and conditions.</div>
+                                    </div>
+                                    
+                                    <div class="form-check mb-3">
+                                        <input class="form-check-input" type="checkbox" id="regulatoryCompliance" name="regulatoryCompliance" required>
+                                        <label class="form-check-label" for="regulatoryCompliance">
+                                            I commit to compliance with all regulatory requirements and sandbox guidelines. <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">You must commit to regulatory compliance.</div>
+                                    </div>
+                                    
+                                    <div class="form-check mb-4">
+                                        <input class="form-check-input" type="checkbox" id="dataPrivacy" name="dataPrivacy" required>
+                                        <label class="form-check-label" for="dataPrivacy">
+                                            I consent to the processing of my personal data as outlined in the 
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">Privacy Policy</a>. <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="invalid-feedback">You must consent to data processing.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Form Navigation -->
+                        <div class="form-navigation d-flex justify-content-between align-items-center pt-4 border-top">
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4" id="prevBtn" onclick="changeStep(-1)" style="visibility: hidden;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                                </svg>
+                                Previous
+                            </button>
+                            
+                            <div class="step-indicator">
+                                <span class="current-step">1</span> of <span class="total-steps">4</span>
+                            </div>
+                            
+                            <button type="button" class="btn btn-primary btn-lg px-4" id="nextBtn" onclick="changeStep(1)">
+                                Next
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ms-2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                            
+                            <button type="submit" class="btn btn-success btn-lg px-4" id="submitBtn" style="display: none;">
+                                <span class="submit-text">Submit Application</span>
+                                <span class="submit-spinner spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                <svg class="submit-icon ms-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22,4 12,14.01 9,11.01"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-container d-none">
+                        <div class="text-center">
+                            <div class="success-icon mb-4">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-success">
+                                    <path d="M9 12l2 2 4-4"/>
+                                    <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                                </svg>
+                            </div>
+                            <h2 class="display-6 fw-bold text-success mb-4">Application Submitted!</h2>
+                            <p class="lead mb-4">
+                                Thank you for your application to the RF Spectrum Sandbox. 
+                                We have received your submission and will review it within 5-7 business days.
+                            </p>
+                            <div class="alert alert-info" role="alert">
+                                <h6 class="fw-bold mb-2">What happens next?</h6>
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">📧 You will receive a confirmation email shortly</li>
+                                    <li class="mb-2">📋 Our team will review your application</li>
+                                    <li class="mb-2">📞 We may contact you for additional information</li>
+                                    <li class="mb-0">✅ You'll be notified of the final decision within 30 days</li>
+                                </ul>
+                            </div>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="index.html" class="btn btn-primary btn-lg px-4">Return Home</a>
+                                <a href="contact.html" class="btn btn-outline-primary btn-lg px-4">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Modal -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="termsModalLabel">Terms and Conditions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold mb-3">1. Program Participation</h6>
+                    <p>By participating in the RF Spectrum Sandbox, you agree to operate within the designated parameters and comply with all regulatory requirements set forth by the Nigerian Communications Commission.</p>
+                    
+                    <h6 class="fw-bold mb-3">2. Testing Guidelines</h6>
+                    <p>All testing activities must be conducted within approved frequency bands and power limits. Participants must ensure their activities do not cause harmful interference to existing services.</p>
+                    
+                    <h6 class="fw-bold mb-3">3. Data and Reporting</h6>
+                    <p>Participants are required to provide regular reports on their testing activities and share relevant technical data with program administrators.</p>
+                    
+                    <h6 class="fw-bold mb-3">4. Intellectual Property</h6>
+                    <p>Participants retain ownership of their intellectual property. However, certain technical findings may need to be shared for regulatory assessment purposes.</p>
+                    
+                    <h6 class="fw-bold mb-3">5. Termination</h6>
+                    <p>The program reserves the right to terminate participation for non-compliance with guidelines or if activities pose risks to existing spectrum users.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6 class="fw-bold mb-3">Data Collection</h6>
+                    <p>We collect personal and organizational information solely for the purpose of managing your participation in the RF Spectrum Sandbox program.</p>
+                    
+                    <h6 class="fw-bold mb-3">Data Usage</h6>
+                    <p>Your information will be used to evaluate applications, provide program support, and ensure regulatory compliance. We do not share personal data with third parties except as required by law.</p>
+                    
+                    <h6 class="fw-bold mb-3">Data Security</h6>
+                    <p>We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction.</p>
+                    
+                    <h6 class="fw-bold mb-3">Your Rights</h6>
+                    <p>You have the right to access, correct, or delete your personal data. Contact us at privacy@rfspectrumsandbox.gov.ng for any privacy-related requests.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="logo-icon me-3">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-accent">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="fw-bold">RF Spectrum Sandbox</div>
+                            <div class="small text-muted">Federal Government of Nigeria</div>
+                        </div>
+                    </div>
+                    <p class="text-muted">
+                        Driving innovation in radio frequency spectrum management and 
+                        technology development for Nigeria's digital future.
+                    </p>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="registration.html" class="text-muted text-decoration-none">Register</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Documentation</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Guidelines</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">FAQ</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <div class="text-muted">
+                        <p class="mb-2">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Abuja, Federal Capital Territory
+                        </p>
+                        <p class="mb-2">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            +234 (0) 9 461 0000
+                        </p>
+                        <p class="mb-0">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="me-2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            info@rfspectrumsandbox.gov.ng
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">
+                        &copy; 2025 RF Spectrum Sandbox. All rights reserved. Federal Government of Nigeria.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-muted text-decoration-none">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/registration.js"></script>
+</body>
+</html>
